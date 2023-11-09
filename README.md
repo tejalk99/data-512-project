@@ -13,16 +13,6 @@ Please see below for a list of datasets used and produced in this project.
 #### API
 - Air Quality System (AQS) API: Documentation for this API is available at this [link](https://aqs.epa.gov/aqsweb/documents/data_api.html): This API, produced by the U.S. Environmental Protection Agency (EPA) was used to access historical Air Quality Index (AQI) measure data from monitors in the surrounding area. I obtained these measures using a bounding box of 100 miles around Longview, Washington.
 
-### Data Outputs
-- Fires and Distances (*gj_df_dist.csv*): This dataset is an intermediary data file, and can be viewed in the `data` folder of this repository. It contains the distances of each fire in the given time period and distance from Longview that was used in my analysis. Each field is outlined below:
-  - *feature* (object): The number of the fire, ranging from 0 to 73746.
-  - *distance* (float64): The distance from Longview to the fire (calculated using the centroid of the fire).
-- Annual AQI Parameters (*boundbox_df.csv*): This dataset is an intermediary data file, and can be viewed in the `data` folder of this repository. It contains the values of each AQI measure from monitors within 50 miles of Longview over the specified time period. Each field is outlined below:
-  - *parameter_code* (object): The ID number of the parameter.
-  - *parameter* (object): The name of the parameter.
-  - *aqi* (object): The AQI measurement.
-  - *year* (int64): The year of the measurement.
-
 ### Special Considerations
 Please note that although this analysis is intended to cover the years 1963 - 2023, the wildfire data set only contains data up to the year 2020. In addition, as satellites began to map fires beginning in the early 1980s, the quality of data is much lower before this time period. 
 
