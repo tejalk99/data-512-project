@@ -1,1 +1,1 @@
-# data-512-project
+# Longview, Washington Smoke Impact Analysis
