@@ -4,7 +4,7 @@
 The goal of this project is to observe the impact of wildfires  on the town of Longview, Washington. Specifically, I investigate fires that occurred within 1250 miles of Longview over the last 60 years (1963 - 2023). First, I conduct an analysis of historical wildfire data to create an annual wildfire smoke impact estimate based on parameters such as the distance of the fire from the city, the total area burned, and the number of fires that occurred. I compare my wildfire estimate to AQI estimates for the same time period, and forecast my wildfire estimate for the next 25 years (2024 - 2049).
 
 ## Data
-Please see below for a list of datasets used and produced in this project. 
+Please see below for a list of datasets used and in this project. 
 
 ### Data Inputs
 #### Files
