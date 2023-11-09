@@ -18,11 +18,21 @@ Please see below for a list of datasets used and produced in this project.
   - *feature* (object): The number of the fire, ranging from 0 to 73746.
   - *distance* (float64): The distance from Longview to the fire (calculated using the centroid of the fire).
 - Annual AQI Parameters (*boundbox_df.csv*): This dataset is an intermediary data file, and can be viewed in the `data` folder of this repository. It contains the values of each AQI measure from monitors within 50 miles of Longview over the specified time period. Each field is outlined below:
-  - parameter_code (*object*): The ID number of the parameter.
-  - aqi (*object*): The AQI measure.
-  - year (*int64*): The year of the measurement.
+  - *parameter_code* (object): The ID number of the parameter.
+  - *parameter* (object): The name of the parameter.
+  - *aqi* (object): The AQI measurement.
+  - *year* (int64): The year of the measurement.
 
 ### Special Considerations
-Please note that although this analysis is intended to cover the years 1963 - 2023, the wildfire data set only contains data up to the year 2020. In addition, as satellites began to map fires beginning in the early 1980s, the quality of data is much lower before this time period. As for the AQI data, the EPA states that 1980 marked the start of nationally consistent operational and quality assurance procedures for air quality monitoring. Although data from previous years is available, there is uncertainty in the results.
+Please note that although this analysis is intended to cover the years 1963 - 2023, the wildfire data set only contains data up to the year 2020. In addition, as satellites began to map fires beginning in the early 1980s, the quality of data is much lower before this time period. 
+
+As for the AQI data, the EPA states that 1980 marked the start of nationally consistent operational and quality assurance procedures for air quality monitoring. Although data from previous years is available, there is uncertainty in the results.
 
 ## Code
+Code used in this analysis is detailed in the *Common Analysis.ipynb* file in this repository. 
+
+- Some code has been modified from code examples provided by Dr. David McDonald under the [Creative Commons](https://creativecommons.org) [CC-BY license](https://creativecommons.org/licenses/by/4.0/):
+  - *Wildfire Proximity Computation Example* (Revision 1.0 - August 13, 2023): This example describes how to perform geodetic computations using the wildfire data. It can be accessed at this [link](https://drive.google.com/file/d/1qNI6hji8CvDeBsnLDAhJXvaqf2gcg8UV/view?usp=drive_link).
+  - *US EPA Air Quality System API Example* (Revision 1.1 - September 5, 2023): This example describes how to use the Air Quality Service API to obtain historical AQI measures. It can be accessed at this [link](https://drive.google.com/file/d/1bxl9qrb_52RocKNGfbZ5znHVqFDMkUzf/view?usp=drive_link).
+- The Medium article [Using Python and Auto ARIMA to Forecast Seasonal Time Series](https://medium.com/@josemarcialportilla/using-python-and-auto-arima-to-forecast-seasonal-time-series-90877adff03c) by Jose Marcial Portilla was also consulted and code examples were modified to create an ARIMA time series model.
+
