@@ -26,3 +26,5 @@ Code used in this analysis is detailed in the *Common Analysis.ipynb* file in th
   - *US EPA Air Quality System API Example* (Revision 1.1 - September 5, 2023): This example describes how to use the Air Quality Service API to obtain historical AQI measures. It can be accessed at this [link](https://drive.google.com/file/d/1bxl9qrb_52RocKNGfbZ5znHVqFDMkUzf/view?usp=drive_link).
 - The Medium article [Using Python and Auto ARIMA to Forecast Seasonal Time Series](https://medium.com/@josemarcialportilla/using-python-and-auto-arima-to-forecast-seasonal-time-series-90877adff03c) by Jose Marcial Portilla was also consulted and code examples were modified to create an ARIMA time series model.
 
+## Common Analysis Write Up and Reflection
+This report describes visualizations created in this analysis, as well as extended figure captions describing each visualization and the process used to create it. It also includes a reflection on what I gained from collaborating with my classmates.
